@@ -1,19 +1,25 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <!-- Project / package metadata -->
+  <!-- Project / package basic metadata -->
   <PropertyGroup>
     <Product>Cecil.XmlDocNames</Product>
     <Version>1.0.0</Version>
     <Description>Generates XmlDoc-style names for Mono.Cecil member refeences.</Description>
     <Authors>rdeago</Authors>
     <Owners>rdeago</Owners>
-    <Copyright>Copyright (c) 2018-2019 Riccardo De Agostini</Copyright>
-    <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>cecil;xmldoc</PackageTags>
     <PackageProjectUrl>https://github.com/rdeago/cecil-xmldocnames</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/rdeago/cecil-xmldocnames.git</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
+
+  <!-- Copyright and license -->
+  <PropertyGroup>
+    <Copyright>Copyright (c) 2018-2019 Riccardo De Agostini</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE" Link="LICENSE" Pack="true" PackagePath="" />
+  </ItemGroup>
 
   <!-- Build options -->
   <PropertyGroup>
@@ -28,8 +34,10 @@
 
   <!-- Symbols and SourceLink -->
   <PropertyGroup>
+    <RepositoryUrl>https://github.com/rdeago/cecil-xmldocnames.git</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
-    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EmbedUntrackedSources>false</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
@@ -40,9 +48,9 @@
     </PackageReference>
   </ItemGroup>
 
-  <!-- Put .ExternalAnnotations.xml in package, alongside the compiled assembly -->
+  <!-- Put .ExternalAnnotations.xml in package, alongside the compiled assembly. -->
   <ItemGroup>
-    <None Include="$(AssemblyName).ExternalAnnotations.xml" Pack="true" PackagePath="lib\netstandard2.0\$(AssemblyName).ExternalAnnotations.xml" />
+    <None Include="$(AssemblyName).ExternalAnnotations.xml" Pack="true" PackagePath="lib\netstandard2.0\" />
   </ItemGroup>
 
   <!-- Use JetBrains.Annotations as development dependency only.
