@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cecil.XmlDocNames", "Cecil.XmlDocNames\Cecil.XmlDocNames.csproj", "{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{8790FE96-7716-4B83-AEC2-6EBEDFC4419D}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {79026CCC-2B02-4EDF-90C7-E25646EF436E}
+	EndGlobalSection
+EndGlobal
