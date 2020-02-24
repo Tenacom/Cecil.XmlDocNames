@@ -47,24 +47,15 @@ namespace Cecil.XmlDocNames
         /// <para><paramref name="member"/> MUST NOT be <c>null</c>.</para>
         /// </remarks>
         [PublicAPI, NotNull, CLSCompliant(false)]
-        public static StringBuilder AppendXmlDocName([NotNull] this StringBuilder @this, [NotNull] MemberReference member)
-        {
-            switch (member)
-            {
-                case TypeReference type:
-                    return @this.Append("T:").AppendDocNameCore(type);
-                case MethodReference method:
-                    return @this.Append("M:").AppendDocNameCore(method);
-                case PropertyReference property:
-                    return @this.Append("P:").AppendDocNameCore(property);
-                case FieldReference field:
-                    return @this.Append("F:").AppendDocNameCore(field);
-                case EventReference @event:
-                    return @this.Append("E:").AppendDocNameCore(@event);
-                default:
-                    throw new InvalidOperationException($"Trying to get the XML doc name for a member of unknown type: {member.GetType().Name} {member.FullName}");
-            }
-        }
+        public static StringBuilder AppendXmlDocName([NotNull] this StringBuilder @this, [NotNull] MemberReference member) =>
+            member switch {
+                TypeReference type => @this.Append("T:").AppendDocNameCore(type),
+                MethodReference method => @this.Append("M:").AppendDocNameCore(method),
+                PropertyReference property => @this.Append("P:").AppendDocNameCore(property),
+                FieldReference field => @this.Append("F:").AppendDocNameCore(field),
+                EventReference @event => @this.Append("E:").AppendDocNameCore(@event),
+                _ => throw new InvalidOperationException($"Trying to get the XML doc name for a member of unknown type: {member.GetType().Name} {member.FullName}"),
+            };
 
         #endregion
 
@@ -149,49 +140,38 @@ namespace Cecil.XmlDocNames
                 sb = AppendDocNameCore(sb, declaringType).Append('.');
 
             // ReSharper disable TailRecursiveCall
-            switch (type)
-            {
-                case PointerType pointerType:
-                    // Pointer type
-                    return sb.AppendDocNameCore(pointerType.ElementType).Append('*');
-                case ByReferenceType byReferenceType:
-                    // ByRef type
-                    return sb.AppendDocNameCore(byReferenceType.ElementType).Append('@');
-                case PinnedType pinnedType:
-                    // Pinned type
-                    return sb.AppendDocNameCore(pinnedType.ElementType).Append('^');
-                case RequiredModifierType requiredModifierType:
-                    // Required modifier
-                    return sb.AppendDocNameCore(requiredModifierType.ElementType)
+            return type switch {
+                PointerType pointerType
+                    => sb.AppendDocNameCore(pointerType.ElementType).Append('*'),
+                ByReferenceType byReferenceType
+                    => sb.AppendDocNameCore(byReferenceType.ElementType).Append('@'),
+                PinnedType pinnedType
+                    => sb.AppendDocNameCore(pinnedType.ElementType).Append('^'),
+                RequiredModifierType requiredModifierType
+                    => sb.AppendDocNameCore(requiredModifierType.ElementType)
                         .Append('|')
-                        .AppendDocNameCore(requiredModifierType.ModifierType);
-                case OptionalModifierType optionalModifierType:
-                    // Optional modifier
-                    return sb.AppendDocNameCore(optionalModifierType.ElementType)
+                        .AppendDocNameCore(requiredModifierType.ModifierType),
+                OptionalModifierType optionalModifierType
+                    => sb.AppendDocNameCore(optionalModifierType.ElementType)
                         .Append('!')
-                        .AppendDocNameCore(optionalModifierType.ModifierType);
-                case ArrayType arrayType:
-                    // Array
-                    return sb.AppendDocNameCore(arrayType.ElementType)
+                        .AppendDocNameCore(optionalModifierType.ModifierType),
+                ArrayType arrayType
+                    => sb.AppendDocNameCore(arrayType.ElementType)
                         .Append('[')
                         .InvokeForEach(arrayType.Dimensions, ",", AppendArrayDimension)
-                        .Append(']');
-                case FunctionPointerType functionPointerType:
-                    // Function pointer
-                    return sb.Append("=FUNC:")
+                        .Append(']'),
+                FunctionPointerType functionPointerType
+                    => sb.Append("=FUNC:")
                         .AppendDocNameCore(functionPointerType.ReturnType)
-                        .AppendMethodSignature(functionPointerType);
-                case GenericInstanceType genericInstanceType:
-                    // Generic type instance
-                    return sb.AppendDocNameCore(genericInstanceType.ElementType)
+                        .AppendMethodSignature(functionPointerType),
+                GenericInstanceType genericInstanceType
+                    => sb.AppendDocNameCore(genericInstanceType.ElementType)
                         .StripGenericArity()
                         .Append('{')
                         .InvokeForEach(genericInstanceType.GenericArguments, ",", AppendDocNameCore)
-                        .Append('}');
-                default:
-                    // For other types, including generic type definitions, Cecil already does the right thing.
-                    return sb.Append(type.Namespace).Append('.').AppendMemberName(type);
-            }
+                        .Append('}'),
+                _ => sb.Append(type.Namespace).Append('.').AppendMemberName(type),
+            };
 
             // ReSharper restore TailRecursiveCall
         }
