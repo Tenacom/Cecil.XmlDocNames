@@ -47,8 +47,12 @@ namespace Cecil.XmlDocNames
         /// <para><paramref name="member"/> MUST NOT be <c>null</c>.</para>
         /// </remarks>
         [PublicAPI, NotNull, CLSCompliant(false)]
-        public static StringBuilder AppendXmlDocName([NotNull] this StringBuilder @this, [NotNull] MemberReference member) =>
-            member switch {
+        public static StringBuilder AppendXmlDocName([NotNull] this StringBuilder @this, [NotNull] MemberReference member)
+        {
+            if (member == null)
+                throw new ArgumentNullException(nameof(member));
+
+            return member switch {
                 TypeReference type => @this.Append("T:").AppendDocNameCore(type),
                 MethodReference method => @this.Append("M:").AppendDocNameCore(method),
                 PropertyReference property => @this.Append("P:").AppendDocNameCore(property),
@@ -56,6 +60,7 @@ namespace Cecil.XmlDocNames
                 EventReference @event => @this.Append("E:").AppendDocNameCore(@event),
                 _ => throw new InvalidOperationException($"Trying to get the XML doc name for a member of unknown type: {member.GetType().Name} {member.FullName}"),
             };
+        }
 
         #endregion
 
