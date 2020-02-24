@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2036
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cecil.XmlDocNames", "Cecil.XmlDocNames\Cecil.XmlDocNames.csproj", "{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cecil.XmlDocNames", "Cecil.XmlDocNames\Cecil.XmlDocNames.csproj", "{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution items", "{8790FE96-7716-4B83-AEC2-6EBEDFC4419D}"
 	ProjectSection(SolutionItems) = preProject
