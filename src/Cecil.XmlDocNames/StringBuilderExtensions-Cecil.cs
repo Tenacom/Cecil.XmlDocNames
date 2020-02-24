@@ -93,6 +93,7 @@ namespace Cecil.XmlDocNames
             for (var i = previousLength; i < sb.Length; i++)
             {
                 var c = sb[i];
+
                 // ReSharper disable once SwitchStatementMissingSomeCases
                 switch (c)
                 {
@@ -191,6 +192,7 @@ namespace Cecil.XmlDocNames
                     // For other types, including generic type definitions, Cecil already does the right thing.
                     return sb.Append(type.Namespace).Append('.').AppendMemberName(type);
             }
+
             // ReSharper restore TailRecursiveCall
         }
 
@@ -221,9 +223,11 @@ namespace Cecil.XmlDocNames
             sb = sb.AppendDocNameCore(property.DeclaringType).Append('.').AppendMemberName(property);
 
             if (property.Parameters.Count > 0)
+            {
                 sb = sb.Append('(')
                     .InvokeForEach(property.Parameters.Select(p => p.ParameterType), ",", AppendDocNameCore)
                     .Append(')');
+            }
 
             return sb;
         }
