@@ -89,7 +89,7 @@ namespace Cecil.XmlDocNames
         static StringBuilder AppendMemberName([NotNull] this StringBuilder sb, [NotNull] MemberReference member)
         {
             var previousLength = sb.Length;
-            sb.Append(member.Name);
+            sb = sb.Append(member.Name);
             for (var i = previousLength; i < sb.Length; i++)
             {
                 var c = sb[i];
@@ -208,13 +208,12 @@ namespace Cecil.XmlDocNames
 
             // Special case for op_Implicit and op_Explicit
             // Quickly bail out if there is not exactly one parameter
-            if (method.Parameters.Count != 1)
-                return sb;
-
-            if ("op_Implicit".Equals(method.Name, StringComparison.Ordinal) || "op_Explicit".Equals(method.Name, StringComparison.Ordinal))
-                sb.Append('~').AppendDocNameCore(method.ReturnType);
-
-            return sb;
+            return method.Parameters.Count != 1
+                ? sb
+                : "op_Implicit".Equals(method.Name, StringComparison.Ordinal)
+               || "op_Explicit".Equals(method.Name, StringComparison.Ordinal)
+                    ? sb.Append('~').AppendDocNameCore(method.ReturnType)
+                    : sb;
         }
 
         [NotNull]
