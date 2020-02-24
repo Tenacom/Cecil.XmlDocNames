@@ -91,21 +91,13 @@ namespace Cecil.XmlDocNames
                 var c = sb[i];
 
                 // ReSharper disable once SwitchStatementMissingSomeCases
-                switch (c)
-                {
-                    case '.':
-                        sb[i] = '#';
-                        break;
-                    case ',':
-                        sb[i] = '@';
-                        break;
-                    case '<':
-                        sb[i] = '{';
-                        break;
-                    case '>':
-                        sb[i] = '}';
-                        break;
-                }
+                sb[i] = c switch {
+                    '.' => '#',
+                    ',' => '@',
+                    '<' => '{',
+                    '>' => '}',
+                    _ => sb[i],
+                };
             }
 
             return sb;
