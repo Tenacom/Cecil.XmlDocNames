@@ -46,7 +46,7 @@ namespace Cecil.XmlDocNames
         /// <para><paramref name="this"/> MUST NOT be <c>null</c>.</para>
         /// <para><paramref name="member"/> MUST NOT be <c>null</c>.</para>
         /// </remarks>
-        [PublicAPI, NotNull]
+        [PublicAPI, NotNull, CLSCompliant(false)]
         public static StringBuilder AppendXmlDocName([NotNull] this StringBuilder @this, [NotNull] MemberReference member)
         {
             switch (member)
