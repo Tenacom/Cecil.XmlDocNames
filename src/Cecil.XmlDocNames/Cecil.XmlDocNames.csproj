@@ -19,7 +19,7 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="..\..\LICENSE" Link="LICENSE" Pack="true" PackagePath="" />
+    <None Include="..\..\LICENSE" Link="LICENSE" Pack="true" PackagePath="" Visible="false" />
   </ItemGroup>
 
   <!-- Build options -->
