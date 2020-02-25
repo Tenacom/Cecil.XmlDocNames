@@ -9,7 +9,7 @@
     <Owners>tenacom</Owners>
     <Company>Tenacom</Company>
     <PackageTags>cecil;xmldoc</PackageTags>
-    <PackageProjectUrl>https://github.com/tenacom/cecil-xmldocnames</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/tenacom/Cecil.XmlDocNames</PackageProjectUrl>
   </PropertyGroup>
 
   <!-- Copyright and license -->
@@ -36,7 +36,7 @@
 
   <!-- Symbols and SourceLink -->
   <PropertyGroup>
-    <RepositoryUrl>https://github.com/tenacom/cecil-xmldocnames.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/tenacom/Cecil.XmlDocNames.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>false</EmbedUntrackedSources>
