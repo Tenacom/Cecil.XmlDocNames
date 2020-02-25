@@ -1,11 +1,11 @@
-![License](https://img.shields.io/github/license/rdeago/cecil-xmldocnames.svg)
+![License](https://img.shields.io/github/license/tenacom/Cecil.XmlDocNames.svg)
 ![NuGet downloads](https://img.shields.io/nuget/dt/Cecil.XmlDocNames.svg)
+![GitHub downloads](https://img.shields.io/github/downloads/tenacom/Cecil.XmlDocNames/total.svg)
 
-![GitHub downloads](https://img.shields.io/github/downloads/rdeago/cecil-xmldocnames/total.svg)
-![Release date](https://img.shields.io/github/release-date/rdeago/cecil-xmldocnames.svg)
-![Last commit](https://img.shields.io/github/last-commit/rdeago/cecil-xmldocnames.svg)
-![Open issues](https://img.shields.io/github/issues-raw/rdeago/cecil-xmldocnames.svg)
-![Closed issues](https://img.shields.io/github/issues-closed-raw/rdeago/cecil-xmldocnames.svg)
+![Release date](https://img.shields.io/github/release-date/tenacom/Cecil.XmlDocNames.svg)
+![Last commit](https://img.shields.io/github/last-commit/tenacom/Cecil.XmlDocNames.svg)
+![Open issues](https://img.shields.io/github/issues-raw/tenacom/Cecil.XmlDocNames.svg)
+![Closed issues](https://img.shields.io/github/issues-closed-raw/tenacom/Cecil.XmlDocNames.svg)
 
 Cecil.XmlDocNames is a small .NET Standard 2.0 library that generates XmlDoc-style names for Mono.Cecil member references. It has no dependencies apart from the .NET Standard library and Mono.Cecil.
 
