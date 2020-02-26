@@ -1,19 +1,31 @@
+# Cecil.XmlDocNames
+
 ![License](https://img.shields.io/github/license/tenacom/Cecil.XmlDocNames.svg)
 ![NuGet downloads](https://img.shields.io/nuget/dt/Cecil.XmlDocNames.svg)
 ![GitHub downloads](https://img.shields.io/github/downloads/tenacom/Cecil.XmlDocNames/total.svg)
-
 ![Release date](https://img.shields.io/github/release-date/tenacom/Cecil.XmlDocNames.svg)
+
 ![Last commit](https://img.shields.io/github/last-commit/tenacom/Cecil.XmlDocNames.svg)
 ![Open issues](https://img.shields.io/github/issues-raw/tenacom/Cecil.XmlDocNames.svg)
 ![Closed issues](https://img.shields.io/github/issues-closed-raw/tenacom/Cecil.XmlDocNames.svg)
 
-Cecil.XmlDocNames is a small .NET Standard 2.0 library that generates XmlDoc-style names for Mono.Cecil member references. It has no dependencies apart from the .NET Standard library and Mono.Cecil.
+`Cecil.XmlDocNames` translates Mono.Cecil member references to XmlDoc-style ID strings.
 
-XmlDoc names are also used by [ReSharper](https://www.jetbrains.com/resharper/) in its [external annotations](https://www.jetbrains.com/help/resharper/Code_Analysis__External_Annotations.html) files, which is why I wrote this library in the first place.
+It's a small, **MIT**-licensed, **.NET Standard 2.0** library. Its only dependency is [`Mono.Cecil`](https://github.com/jbevain/cecil).
+
+## Why this library
+
+With `Cecil.XmlDocNames` you can process assemblies and related XML documentation files at the same time.
+
+Or you can automatically augment XML documentation, based on [code analysis attributes](https://docs.microsoft.com/en-us/dotnet/api/system.diagnostics.codeanalysis?view=netstandard-2.1) extracted from compiled assemblies.
+
+Or you can generate external annotation files for [ReSharper](https://www.jetbrains.com/resharper/), based on the contents of compiled assemblies... although you don't really have to bother, because that's exactly what our [`ReSharper.ExportAnnotations`](https://github.com/tenacom/ReSharper.ExportAnnotations) library does (using `Cecil.XmlDocNames`, of course.)
 
 If you find this library useful, please **:star: star it**. Thank you!
 
-## Usage
+## Quick start
+
+It's easy as 1 - 2 - 3:
 
 1. Reference the [NuGet package](https://www.nuget.org/packages/Cecil.XmlDocNames).
 2. `using Cecil.XmlDocNames;`
