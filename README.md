@@ -1,4 +1,4 @@
-# Cecil.XmlDocNames
+# ![](https://raw.githubusercontent.com/tenacom/Cecil.XmlDocNames/master/graphics/Cecil.XmlDocNames-128.png) Cecil.XmlDocNames
 
 ![License](https://img.shields.io/github/license/tenacom/Cecil.XmlDocNames.svg)
 ![NuGet downloads](https://img.shields.io/nuget/dt/Cecil.XmlDocNames.svg)
@@ -38,5 +38,7 @@ where `myMemberReference` can be an instance of one of the following classes:
     * `Mono.Cecil.EventReference`.
 
 ---
+
+The logo for this library is a modified version of [Documentation](https://thenounproject.com/icon/2800476/) by IYIKON, from [the Noun Project](https://thenounproject.com).
 
 *Disclaimer:* The author of this library is in no way affiliated to [JetBrains s.r.o.](https://www.jetbrains.com/) (the makers of ReSharper) other than being a satisfied cutomer.

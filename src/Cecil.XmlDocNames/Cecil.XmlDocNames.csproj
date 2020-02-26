@@ -22,6 +22,14 @@
     <None Include="..\..\LICENSE" Link="LICENSE" Pack="true" PackagePath="" Visible="false" />
   </ItemGroup>
 
+  <!-- Package icon -->
+  <PropertyGroup>
+    <PackageIcon>Cecil.XmlDocNames.png</PackageIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\graphics\Cecil.XmlDocNames-128.png" Link="Cecil.XmlDocNames.png" Pack="true" PackagePath="Cecil.XmlDocNames.png" Visible="false" />
+  </ItemGroup>
+
   <!-- Build options -->
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
