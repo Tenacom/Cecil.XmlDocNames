@@ -8,7 +8,7 @@
     <Authors>rdeago</Authors>
     <Owners>tenacom</Owners>
     <Company>Tenacom</Company>
-    <PackageTags>cecil;xmldoc</PackageTags>
+    <PackageTags>dotnet cecil xmldoc documentation resharper annotations</PackageTags>
     <PackageProjectUrl>https://github.com/tenacom/Cecil.XmlDocNames</PackageProjectUrl>
   </PropertyGroup>
 
