@@ -4,7 +4,7 @@
   <PropertyGroup>
     <Product>Cecil.XmlDocNames</Product>
     <Version>1.0.0</Version>
-    <Description>Generates XmlDoc-style names for Mono.Cecil member refeences.</Description>
+    <Description>Generates XmlDoc-style names for Mono.Cecil member references.</Description>
     <Authors>rdeago</Authors>
     <Owners>tenacom</Owners>
     <Company>Tenacom</Company>
