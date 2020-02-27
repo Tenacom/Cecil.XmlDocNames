@@ -10,6 +10,9 @@
     <Company>Tenacom</Company>
     <PackageTags>dotnet cecil xmldoc documentation resharper annotations</PackageTags>
     <PackageProjectUrl>https://github.com/tenacom/Cecil.XmlDocNames</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <RepositoryUrl>$(PackageProjectUrl).git</RepositoryUrl>
+    <PackageReleaseNotes>A changelog is available at $(PackageProjectUrl)/blob/master/CHANGELOG.md</PackageReleaseNotes>
   </PropertyGroup>
 
   <!-- Copyright and license -->
@@ -44,8 +47,6 @@
 
   <!-- Symbols and SourceLink -->
   <PropertyGroup>
-    <RepositoryUrl>https://github.com/tenacom/Cecil.XmlDocNames.git</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <EmbedUntrackedSources>false</EmbedUntrackedSources>
     <IncludeSymbols>true</IncludeSymbols>

@@ -8,6 +8,7 @@
 ![Last commit](https://img.shields.io/github/last-commit/tenacom/Cecil.XmlDocNames.svg)
 ![Open issues](https://img.shields.io/github/issues-raw/tenacom/Cecil.XmlDocNames.svg)
 ![Closed issues](https://img.shields.io/github/issues-closed-raw/tenacom/Cecil.XmlDocNames.svg)
+![Changelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-%23E05735)
 
 `Cecil.XmlDocNames` translates Mono.Cecil member references to XmlDoc-style ID strings.
 
