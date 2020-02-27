@@ -3,7 +3,7 @@
   <!-- Project / package basic metadata -->
   <PropertyGroup>
     <Product>Cecil.XmlDocNames</Product>
-    <Version>1.1.0</Version>
+    <Version>1.1.1</Version>
     <Description>Translates Mono.Cecil member references to XmlDoc-style ID strings.</Description>
     <Authors>rdeago</Authors>
     <Owners>tenacom</Owners>
