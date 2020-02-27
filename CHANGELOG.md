@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 - **DOCUMENTATION:** The project now has a changelog.
+- **DOCUMENTATION:** Most badges in [README.md](https://github.com/tenacom/Cecil.XmlDocNames/blob/master/README.md) are now links to relevant URLs.
 
 ## [1.1.0](https://github.com/tenacom/Cecil.XmlDocNames/releases/tag/1.1.0) (2020-02-26)
 
