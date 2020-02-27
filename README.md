@@ -1,14 +1,14 @@
 # ![](https://raw.githubusercontent.com/tenacom/Cecil.XmlDocNames/master/graphics/Cecil.XmlDocNames-128.png) Cecil.XmlDocNames
 
-![License](https://img.shields.io/github/license/tenacom/Cecil.XmlDocNames.svg)
-![NuGet downloads](https://img.shields.io/nuget/dt/Cecil.XmlDocNames.svg)
+[![License](https://img.shields.io/github/license/tenacom/Cecil.XmlDocNames.svg)](https://github.com/tenacom/Cecil.XmlDocNames/blob/master/LICENSE)
+[![NuGet downloads](https://img.shields.io/nuget/dt/Cecil.XmlDocNames.svg)](https://nuget.org/packages/Cecil.XmlDocNames)
 ![GitHub downloads](https://img.shields.io/github/downloads/tenacom/Cecil.XmlDocNames/total.svg)
-![Release date](https://img.shields.io/github/release-date/tenacom/Cecil.XmlDocNames.svg)
+[![Release date](https://img.shields.io/github/release-date/tenacom/Cecil.XmlDocNames.svg)](https://github.com/tenacom/Cecil.XmlDocNames/releases)
 
-![Last commit](https://img.shields.io/github/last-commit/tenacom/Cecil.XmlDocNames.svg)
-![Open issues](https://img.shields.io/github/issues-raw/tenacom/Cecil.XmlDocNames.svg)
-![Closed issues](https://img.shields.io/github/issues-closed-raw/tenacom/Cecil.XmlDocNames.svg)
-![Changelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-%23E05735)
+[![Last commit](https://img.shields.io/github/last-commit/tenacom/Cecil.XmlDocNames.svg)](https://github.com/tenacom/Cecil.XmlDocNames/commits/master)
+[![Open issues](https://img.shields.io/github/issues-raw/tenacom/Cecil.XmlDocNames.svg)](https://github.com/tenacom/Cecil.XmlDocNames/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc)
+[![Closed issues](https://img.shields.io/github/issues-closed-raw/tenacom/Cecil.XmlDocNames.svg)](https://github.com/tenacom/Cecil.XmlDocNames/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc)
+[![Changelog](https://img.shields.io/badge/changelog-Keep%20a%20Changelog%20v1.0.0-%23E05735)](https://github.com/tenacom/Cecil.XmlDocNames/blob/master/CHANGELOG.md)
 
 `Cecil.XmlDocNames` translates Mono.Cecil member references to XmlDoc-style ID strings.
 
