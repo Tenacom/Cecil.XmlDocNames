@@ -78,7 +78,7 @@ namespace Cecil.XmlDocNames
                     ',' => '@',
                     '<' => '{',
                     '>' => '}',
-                    _ => sb[i],
+                    _ => c,
                 };
             }
 
