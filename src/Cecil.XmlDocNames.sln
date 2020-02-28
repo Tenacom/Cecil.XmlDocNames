@@ -20,7 +20,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "- Configuration", "- Config
 		StyleCop.Analyzers.ruleset = StyleCop.Analyzers.ruleset
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cecil.XmlDocNames.Tests", "Cecil.XmlDocNames.Tests\Cecil.XmlDocNames.Tests.csproj", "{F05A5F36-2154-400D-B153-88A85E0BA5D4}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{666B431F-DEA5-45E1-A271-84060570A7E8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cecil.XmlDocNames.Tests", "Tests\Cecil.XmlDocNames.Tests\Cecil.XmlDocNames.Tests.csproj", "{C772984C-CAF9-47FD-A478-08D0EA798C32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,13 +34,16 @@ Global
 		{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F05A5F36-2154-400D-B153-88A85E0BA5D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F05A5F36-2154-400D-B153-88A85E0BA5D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F05A5F36-2154-400D-B153-88A85E0BA5D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F05A5F36-2154-400D-B153-88A85E0BA5D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C772984C-CAF9-47FD-A478-08D0EA798C32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C772984C-CAF9-47FD-A478-08D0EA798C32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C772984C-CAF9-47FD-A478-08D0EA798C32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C772984C-CAF9-47FD-A478-08D0EA798C32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C772984C-CAF9-47FD-A478-08D0EA798C32} = {666B431F-DEA5-45E1-A271-84060570A7E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79026CCC-2B02-4EDF-90C7-E25646EF436E}
