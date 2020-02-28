@@ -5,4 +5,11 @@
     <IsPackable Condition="'$(IsTestProject)' == 'true'">false</IsPackable>
   </PropertyGroup>
 
+  <!-- Generate XML documentation by default -->
+  <PropertyGroup>
+    <GenerateDocumentationFile Condition="'$(GenerateDocumentationFile)' == ''">true</GenerateDocumentationFile>
+    <GenerateDocumentationFile Condition="'$(GenerateDocumentationFile)' != 'true'">false</GenerateDocumentationFile>
+    <DocumentationFile>$(OutputPath)$(AssemblyName).xml</DocumentationFile>
+  </PropertyGroup>
+
 </Project>
