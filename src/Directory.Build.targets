@@ -1,0 +1,8 @@
+<Project>
+
+  <!-- Never pack a test project -->
+  <PropertyGroup>
+    <IsPackable Condition="'$(IsTestProject)' == 'true'">false</IsPackable>
+  </PropertyGroup>
+
+</Project>
