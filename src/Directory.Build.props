@@ -1,0 +1,39 @@
+<Project>
+
+  <!-- Project / package basic metadata -->
+  <PropertyGroup>
+    <Product>Cecil.XmlDocNames</Product>
+    <Version>1.1.1</Version>
+    <Authors>rdeago</Authors>
+    <Owners>tenacom</Owners>
+    <Company>Tenacom</Company>
+    <Copyright>Copyright (c) 2018-2020 Riccardo De Agostini and Tenacom</Copyright>
+  </PropertyGroup>
+
+  <!-- Build options -->
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <LangVersion>8.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <!-- Analyzers -->
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\StyleCop.Analyzers.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <AdditionalFiles Include="$(MSBuildThisFileDirectory).editorconfig" Visible="false" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" Version="2.9.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.164">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+</Project>
