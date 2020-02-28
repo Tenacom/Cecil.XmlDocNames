@@ -16,35 +16,18 @@ namespace Cecil.XmlDocNames
         /// Gets the name of a <see cref="MemberReference">MemberReference</see> in the same format used by XML documentation.
         /// </summary>
         /// <param name="this">The <see cref="MemberReference">MemberReference</see> instance on which this method is called.</param>
-        /// <returns>A <see cref="string">string</see> containing the member's name  in the same format used by XML documentation.</returns>
+        /// <returns>A <see cref="string">string</see> containing the member's name in the same format used by XML documentation.</returns>
+        /// <exception cref="ArgumentNullException"><paramref name="this"/> is <c>null</c>.</exception>
         /// <exception cref="InvalidOperationException">
         /// <para><paramref name="this"/> is not an instance of one of the following classes:</para>
         /// <list type="bullet">
-        ///   <item>
-        ///     <term><see cref="TypeReference"/></term>
-        ///     <description>A type reference or definition.</description>
-        ///   </item>
-        ///   <item>
-        ///     <term><see cref="MethodReference"/></term>
-        ///     <description>A method reference or definition.</description>
-        ///   </item>
-        ///   <item>
-        ///     <term><see cref="PropertyReference"/></term>
-        ///     <description>A property reference or definition.</description>
-        ///   </item>
-        ///   <item>
-        ///     <term><see cref="FieldReference"/></term>
-        ///     <description>A field reference or definition.</description>
-        ///   </item>
-        ///   <item>
-        ///     <term><see cref="EventReference"/></term>
-        ///     <description>An event reference or definition.</description>
-        ///   </item>
+        ///   <item><term><c>Mono.Cecil.TypeReference</c></term></item>
+        ///   <item><term><c>Mono.Cecil.MethodReference</c></term></item>
+        ///   <item><term><c>Mono.Cecil.PropertyReference</c></term></item>
+        ///   <item><term><c>Mono.Cecil.FieldReference</c></term></item>
+        ///   <item><term><c>Mono.Cecil.EventReference</c></term></item>
         /// </list>
         /// </exception>
-        /// <remarks>
-        /// <para><paramref name="this"/> MUST NOT be <c>null</c>.</para>
-        /// </remarks>
         [PublicAPI, NotNull, CLSCompliant(false)]
         public static string GetXmlDocName([NotNull] this MemberReference @this)
             => new StringBuilder().AppendXmlDocName(@this).ToString();
