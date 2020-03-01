@@ -24,7 +24,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{666B431F
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cecil.XmlDocNames.Tests", "Tests\Cecil.XmlDocNames.Tests\Cecil.XmlDocNames.Tests.csproj", "{C772984C-CAF9-47FD-A478-08D0EA798C32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExampleAssembly", "Tests\ExampleAssembly\ExampleAssembly.csproj", "{EFA5A940-A95E-4BA9-B4B5-EA8E265CBF86}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleAssembly", "Tests\ExampleAssembly\ExampleAssembly.csproj", "{EFA5A940-A95E-4BA9-B4B5-EA8E265CBF86}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
