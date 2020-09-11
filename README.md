@@ -38,8 +38,12 @@ where `myMemberReference` can be an instance of one of the following classes:
     * `Mono.Cecil.FieldReference`;
     * `Mono.Cecil.EventReference`.
 
----
+## Credits
 
 The logo for this library is a modified version of [Documentation](https://thenounproject.com/icon/2800476/) by IYIKON, from [the Noun Project](https://thenounproject.com).
+
+The font used in the logo is [BloggerSans.otf](https://fontlibrary.org/en/font/blogger-sans-otf) by Sergiy S. Tkachenko, from [Font Library](https://fontlibrary.org).
+
+---
 
 *Disclaimer:* The author of this library is in no way affiliated to [JetBrains s.r.o.](https://www.jetbrains.com/) (the makers of ReSharper) other than being a satisfied cutomer.
