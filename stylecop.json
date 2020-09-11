@@ -38,13 +38,14 @@
 
     "documentationRules": {
       "companyName": "Tenacom",
-      "copyrightText": "Copyright (C) {companyName}. All rights reserved.\nLicensed under the {licenseName} license.\nSee {licenseFile} file in the project root for full license information.",
+      "copyrightText": "{decoration}\nCopyright (C) {companyName}. All rights reserved.\nLicensed under the {licenseName} license.\nSee {licenseFile} file in the project root for full license information.\n\nPart of this file may be third-party code, distributed under a compatible license.\nSee {thirdPartyNoticeFile} file in the project root for third-party copyright notices.\n{decoration}",
       "variables": {
         "licenseName": "MIT",
-        "licenseFile": "LICENSE"
+        "licenseFile": "LICENSE",
+        "thirdPartyNoticeFile": "THIRD-PARTY-NOTICES",
+        "decoration": "-----------------------------------------------------------------------------------"
       },
       "xmlHeader": false,
-      "headerDecoration": "---------------------------------------------------------------------------",
       "documentInterfaces": true,
       "documentExposedElements": true,
       "documentInternalElements": false,
