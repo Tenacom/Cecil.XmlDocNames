@@ -14,7 +14,9 @@ namespace ExampleAssembly
 
         public int Property { get; set; }
 
+#pragma warning disable CS0067 // Event is never used - accessed only via reflection
         public event EventHandler? Event;
+#pragma warning restore CS0067
 
         public void Method(int a, ref string b, byte[] c) => b = a + c.ToString();
 
