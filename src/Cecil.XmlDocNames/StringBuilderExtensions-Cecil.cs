@@ -39,6 +39,11 @@ namespace Cecil.XmlDocNames
         [CLSCompliant(false)]
         public static StringBuilder AppendXmlDocName(this StringBuilder @this, MemberReference member)
         {
+            if (@this == null)
+            {
+                throw new ArgumentNullException(nameof(@this));
+            }
+
             if (member == null)
             {
                 throw new ArgumentNullException(nameof(member));
