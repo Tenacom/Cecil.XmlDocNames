@@ -10,8 +10,6 @@ namespace Cecil.XmlDocNames
     /// </summary>
     public static class MemberReferenceExtensions
     {
-        #region Public API
-
         /// <summary>
         /// Gets the name of a <see cref="MemberReference">MemberReference</see> in the same format used by XML documentation.
         /// </summary>
@@ -28,10 +26,16 @@ namespace Cecil.XmlDocNames
         ///   <item><term><c>Mono.Cecil.EventReference</c></term></item>
         /// </list>
         /// </exception>
-        [PublicAPI, NotNull, CLSCompliant(false)]
-        public static string GetXmlDocName([NotNull] this MemberReference @this)
-            => new StringBuilder().AppendXmlDocName(@this).ToString();
+        [PublicAPI]
+        [CLSCompliant(false)]
+        public static string GetXmlDocName(this MemberReference @this)
+        {
+            if (@this == null)
+            {
+                throw new ArgumentNullException(nameof(@this));
+            }
 
-        #endregion
+            return new StringBuilder().AppendXmlDocName(@this).ToString();
+        }
     }
 }

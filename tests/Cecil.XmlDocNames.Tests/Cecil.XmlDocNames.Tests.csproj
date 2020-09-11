@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <XmlDocs>false</XmlDocs>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--Allow underscores in member names. -->
+    <NoWarn>$(NoWarn);CA1707</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Mono.Cecil" />
+    <PackageReference Include="nunit" />
+    <PackageReference Include="NUnit3TestAdapter" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Cecil.XmlDocNames\Cecil.XmlDocNames.csproj" />
+    <ProjectReference Include="..\ExampleAssembly\ExampleAssembly.csproj" />
+  </ItemGroup>
+
+  <Target Name="ShowNoWarn" BeforeTargets="CoreBuild">
+    <Message Importance="High" Text="NoWarn = '$(NoWarn)'" />
+  </Target>
+
+</Project>
