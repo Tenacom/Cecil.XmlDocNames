@@ -1,5 +1,5 @@
 #nullable enable
 Cecil.XmlDocNames.MemberReferenceExtensions
 Cecil.XmlDocNames.StringBuilderExtensions
-static Cecil.XmlDocNames.MemberReferenceExtensions.GetXmlDocName(this Mono.Cecil.MemberReference this) -> string
-static Cecil.XmlDocNames.StringBuilderExtensions.AppendXmlDocName(this System.Text.StringBuilder this, Mono.Cecil.MemberReference member) -> System.Text.StringBuilder
+static Cecil.XmlDocNames.MemberReferenceExtensions.GetXmlDocName(this Mono.Cecil.MemberReference! this) -> string!
+static Cecil.XmlDocNames.StringBuilderExtensions.AppendXmlDocName(this System.Text.StringBuilder! this, Mono.Cecil.MemberReference! member) -> System.Text.StringBuilder!
