@@ -3,8 +3,6 @@ using System.Text;
 using Cecil.XmlDocNames.Tests.Internal;
 using NUnit.Framework;
 
-#pragma warning disable IDE0058 // Expression value is never used - Assert.Throws<> returns the thrown exception.
-
 namespace Cecil.XmlDocNames.Tests
 {
     [TestFixture]
@@ -14,7 +12,7 @@ namespace Cecil.XmlDocNames.Tests
         public void AppendXmlDocName_WithNullMember_ThrowsArgumentNullException()
         {
             var sb = new StringBuilder();
-            Assert.Throws<ArgumentNullException>(() => sb.AppendXmlDocName(null!));
+            _ = Assert.Throws<ArgumentNullException>(() => sb.AppendXmlDocName(null!));
         }
 
         [Test]
@@ -47,6 +45,18 @@ namespace Cecil.XmlDocNames.Tests
 
             var result = sb.AppendXmlDocName(field).ToString();
             Assert.AreEqual("F:ExampleAssembly.ExampleClass.Field", result);
+        }
+
+        [Test]
+        public void AppendXmlDocName_WithEvent_ReturnsCorrectValue()
+        {
+            var sb = new StringBuilder();
+            using var assembly = TestUtility.ReadExampleAssembly();
+            var type = assembly.GetTypeThatStartsWith("Example");
+            var evnt = type.GetEventThatStartsWith("E");
+
+            var result = sb.AppendXmlDocName(evnt).ToString();
+            Assert.AreEqual("E:ExampleAssembly.ExampleClass.Event", result);
         }
 
         [Test]

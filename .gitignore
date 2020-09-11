@@ -1,8 +1,7 @@
 # Visual Studio
-src/**/bin/
-src/**/obj/
-src/packages/
-*/.vs/
+**/bin/
+**/obj/
+**/.vs/
 *.csproj.user
 
 # ReSharper

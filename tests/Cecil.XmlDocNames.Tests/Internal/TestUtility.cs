@@ -4,7 +4,7 @@ using Mono.Cecil;
 
 namespace Cecil.XmlDocNames.Tests.Internal
 {
-    static class TestUtility
+    internal static class TestUtility
     {
         public static AssemblyDefinition ReadExampleAssembly()
         {

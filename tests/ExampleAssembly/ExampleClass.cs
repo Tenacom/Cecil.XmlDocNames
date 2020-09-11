@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 namespace ExampleAssembly
 {
@@ -12,6 +13,8 @@ namespace ExampleAssembly
         }
 
         public int Property { get; set; }
+
+        public event EventHandler? Event;
 
         public void Method(int a, ref string b, byte[] c) => b = a + c.ToString();
 

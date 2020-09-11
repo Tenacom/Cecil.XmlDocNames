@@ -1,0 +1,26 @@
+<Project>
+
+  <!-- Common project / package basic metadata -->
+  <PropertyGroup>
+    <Product>Cecil.XmlDocNames</Product>
+    <Authors>rdeago</Authors>
+    <Owners>tenacom</Owners>
+    <Company>Tenacom</Company>
+    <Copyright>Copyright (c) 2018-2020 Riccardo De Agostini and Tenacom</Copyright>
+    <PackageReleaseNotes>A changelog is available at $(PackageProjectUrl)/blob/master/CHANGELOG.md</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <!-- Common build options -->
+  <PropertyGroup>
+    <Deterministic>true</Deterministic>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <!-- Package Central Version Management -->
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+</Project>

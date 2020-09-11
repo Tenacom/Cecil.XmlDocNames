@@ -8,8 +8,6 @@ namespace Cecil.XmlDocNames
 {
     public static partial class StringBuilderExtensions
     {
-        #region Public API
-
         /// <summary>
         /// Appends the name of a <see cref="MemberReference">MemberReference</see> to a <see cref="StringBuilder">StringBuilder</see>,
         /// in the same format used by XML documentation.
@@ -28,11 +26,14 @@ namespace Cecil.XmlDocNames
         ///   <item><term><c>Mono.Cecil.EventReference</c></term></item>
         /// </list>
         /// </exception>
-        [PublicAPI, NotNull, CLSCompliant(false)]
-        public static StringBuilder AppendXmlDocName([NotNull] this StringBuilder @this, [NotNull] MemberReference member)
+        [PublicAPI]
+        [CLSCompliant(false)]
+        public static StringBuilder AppendXmlDocName(this StringBuilder @this, MemberReference member)
         {
             if (member == null)
+            {
                 throw new ArgumentNullException(nameof(member));
+            }
 
             return member switch {
                 TypeReference type => @this.Append("T:").AppendDocNameCore(type),
@@ -44,17 +45,14 @@ namespace Cecil.XmlDocNames
             };
         }
 
-        #endregion
-
-        #region Private API
-
-        [NotNull]
-        static StringBuilder StripGenericArity([NotNull] this StringBuilder sb)
+        private static StringBuilder StripGenericArity(this StringBuilder sb)
         {
             for (var i = sb.Length - 1; i >= 0; i--)
             {
                 if (sb[i] != '`')
+                {
                     continue;
+                }
 
                 sb.Length = i;
                 break;
@@ -63,8 +61,7 @@ namespace Cecil.XmlDocNames
             return sb;
         }
 
-        [NotNull]
-        static StringBuilder AppendMemberName([NotNull] this StringBuilder sb, [NotNull] MemberReference member)
+        private static StringBuilder AppendMemberName(this StringBuilder sb, MemberReference member)
         {
             var previousLength = sb.Length;
             sb = sb.Append(member.Name);
@@ -85,14 +82,12 @@ namespace Cecil.XmlDocNames
             return sb;
         }
 
-        [NotNull]
-        static StringBuilder AppendArrayDimension([NotNull] this StringBuilder sb, ArrayDimension dimension)
+        private static StringBuilder AppendArrayDimension(this StringBuilder sb, ArrayDimension dimension)
             => dimension.IsSized
                 ? sb.Append(dimension.LowerBound).Append(':').Append(dimension.UpperBound)
                 : sb;
 
-        [NotNull]
-        static StringBuilder AppendMethodSignature([NotNull] this StringBuilder sb, [NotNull] IMethodSignature signature)
+        private static StringBuilder AppendMethodSignature(this StringBuilder sb, IMethodSignature signature)
         {
             if (signature.HasParameters)
             {
@@ -105,18 +100,22 @@ namespace Cecil.XmlDocNames
         }
 
         [NotNull]
-        static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] TypeReference type)
+        private static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] TypeReference type)
         {
             // Generic parameter (`1 / ``1)
             // Must be handled before nested types, because generic type parameters
             // have a DeclaringType although they are obviously not nested types.
             if (type is GenericParameter genericParameter)
+            {
                 return sb.Append(genericParameter.Type == GenericParameterType.Method ? "``" : "`").Append(genericParameter.Position);
+            }
 
             // Nested type
             var declaringType = type.DeclaringType;
             if (declaringType != null)
+            {
                 sb = AppendDocNameCore(sb, declaringType).Append('.');
+            }
 
             // ReSharper disable TailRecursiveCall
             return type switch {
@@ -156,12 +155,14 @@ namespace Cecil.XmlDocNames
         }
 
         [NotNull]
-        static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] MethodReference method)
+        private static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] MethodReference method)
         {
             sb = sb.AppendDocNameCore(method.DeclaringType).Append('.').AppendMemberName(method);
 
             if (method.HasGenericParameters)
+            {
                 sb = sb.Append("``").Append(method.GenericParameters.Count);
+            }
 
             sb = AppendMethodSignature(sb, method);
 
@@ -176,7 +177,7 @@ namespace Cecil.XmlDocNames
         }
 
         [NotNull]
-        static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] PropertyReference property)
+        private static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] PropertyReference property)
         {
             sb = sb.AppendDocNameCore(property.DeclaringType).Append('.').AppendMemberName(property);
 
@@ -191,9 +192,7 @@ namespace Cecil.XmlDocNames
         }
 
         [NotNull]
-        static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] MemberReference field)
+        private static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] MemberReference field)
             => sb.AppendDocNameCore(field.DeclaringType).Append('.').AppendMemberName(field);
-
-        #endregion
     }
 }
