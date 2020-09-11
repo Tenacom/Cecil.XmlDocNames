@@ -63,13 +63,11 @@ namespace Cecil.XmlDocNames
         {
             for (var i = sb.Length - 1; i >= 0; i--)
             {
-                if (sb[i] != '`')
+                if (sb[i] == '`')
                 {
-                    continue;
+                    sb.Length = i;
+                    break;
                 }
-
-                sb.Length = i;
-                break;
             }
 
             return sb;
