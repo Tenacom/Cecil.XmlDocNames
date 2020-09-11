@@ -1,0 +1,5 @@
+area-automation:
+  - any: ['.github/**/*', '*/LICENSE', '**/README.md', '**/THIRD-PARTY-NOTICES']
+
+area-dependencies:
+  - "**/PackageVersions.props"

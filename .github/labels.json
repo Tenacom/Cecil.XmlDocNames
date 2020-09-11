@@ -1,0 +1,38 @@
+[
+    { "name": "area-code", "color": "ccc", "description": "The issue or PR is about library code." },
+
+    { "name": "v1.x", "color": "9c3", "description": "The issue or PR affects version 1 of the library." },
+
+    { "name": "platform-all", "color": "360", "description": "The issue or PR affects all supported platforms." },
+    { "name": "platform-net", "color": "360", "description": "The issue or PR affects the .NET platform." },
+    { "name": "platform-net", "color": "3600", "description": "The issue or PR affects the .NET Core platform." },
+    { "name": "platform-netcore", "color": "360", "description": "The issue or PR affects the .NET Framework platform." },
+    { "name": "platform-xamarin", "color": "360", "description": "The issue or PR affects the Xamarin platform." },
+
+    { "name": "os-all", "color": "360", "description": "The issue or PR affects all supported operating systems." },
+    { "name": "os-windows", "color": "360", "description": "The issue or PR only affects Windows deployments." },
+    { "name": "os-linux", "color": "360", "description": "The issue or PR only affects Linux deployments." },
+    { "name": "os-macosx", "color": "360", "description": "The issue or PR only affects MacOS deployments." },
+    { "name": "os-ios", "color": "360", "description": "The issue or PR only affects iOS deployments." },
+    { "name": "os-android", "color": "360", "description": "The issue or PR only affects Android deployments." },
+    { "name": "os-webassembly", "color": "360", "description": "The issue or PR only affects Android deployments." },
+    
+    { "name": "area-tests", "color": "ccc", "description": "The issue or PR is about tests and does not affect code." },
+    { "name": "area-dependencies", "color": "ccc", "description": "The issue requires to / the PR does add, update, or remove dependencies." },
+    { "name": "area-documentation", "color": "ccc", "description": "The issue or PR is about documentation and does not affect code." },
+    { "name": "area-automation", "color": "ccc", "description": "The issue or PR is about CI / CD / actions." },
+
+    { "name": "bug", "color": "c00", "description": "The issue raises / the PR solves a bug." },
+    { "name": "enhancement", "color": "36c", "description": "The issue requests / the PR implements new or improved functionality." },
+    { "name": "refactor", "color": "069", "description": "The issue requests / the PR implements a refactor of existing code without affecting functionality." },
+    { "name": "design", "color": "cfc", "description": "The issue is a design discussion. Not for PRs." },
+
+    { "name": "breaking_change", "color": "fc0", "description": "The issue requires / the PR contains breaking changes." },
+    { "name": "help_wanted", "color": "c36", "description": "Help is needed to solve the issue / finalize the PR." },
+    { "name": "easy", "color": "ccf", "description": "Easy issue, good pick for new collaborators. Not for PRs." },
+
+    { "name": "invalid", "color": "666", "description": "[Issue] The reported bug is in another project, the enhancement makes little or no sense, or this is otherwise not a valid issue." },
+    { "name": "duplicate", "color": "666", "description": "[Issue] This is a duplicate of another issue." },
+    { "name": "by_design", "color": "666", "description": "[Issue] The lamented behavior is by design." }
+    { "name": "wontfix", "color": "666", "description": "[Issue] The issue is valid, but will not be acted upon, for reasons hopefully explained in comments." }
+]
