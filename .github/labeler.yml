@@ -1,5 +1,11 @@
-area-automation:
-  - any: ['.github/**/*', '*/LICENSE', '**/README.md', '**/THIRD-PARTY-NOTICES']
+area-ci:
+  - any: ['.github/workflows/**/*']
 
-area-dependencies:
+area-deps:
   - "**/PackageVersions.props"
+
+area-docs:
+  - any: ['.github/**/*', '**/LICENSE', '**/README.md', '**/THIRD-PARTY-NOTICES']
+
+area-repo:
+  - any: ['.github/*.yml', '.github/**/*.md']
