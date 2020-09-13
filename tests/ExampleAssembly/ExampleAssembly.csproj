@@ -5,6 +5,7 @@
     <XmlDocs>false</XmlDocs>
     <UseStandardAnalyzers>false</UseStandardAnalyzers>
     <UsePublicApiAnalyzers>false</UsePublicApiAnalyzers>
+    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
 </Project>
