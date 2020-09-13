@@ -2,12 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <XmlDocs>false</XmlDocs>
-  </PropertyGroup>
-
-  <PropertyGroup>
-    <!--Allow underscores in member names. -->
-    <NoWarn>$(NoWarn);CA1707</NoWarn>
   </PropertyGroup>
 
   <ItemGroup>
@@ -21,9 +15,5 @@
     <ProjectReference Include="..\..\src\Cecil.XmlDocNames\Cecil.XmlDocNames.csproj" />
     <ProjectReference Include="..\ExampleAssembly\ExampleAssembly.csproj" />
   </ItemGroup>
-
-  <Target Name="ShowNoWarn" BeforeTargets="CoreBuild">
-    <Message Importance="High" Text="NoWarn = '$(NoWarn)'" />
-  </Target>
 
 </Project>
