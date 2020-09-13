@@ -15,6 +15,9 @@ using Mono.Cecil;
 
 namespace Cecil.XmlDocNames
 {
+    /// <content>
+    /// XML documentation for this class is in StringBuilderExtensions.cs.
+    /// </content>
     public static partial class StringBuilderExtensions
     {
         /// <summary>
