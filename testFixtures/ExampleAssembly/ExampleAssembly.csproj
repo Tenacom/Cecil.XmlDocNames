@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <XmlDocs>false</XmlDocs>
+    <UseJetBrainsAnnotations>false</UseJetBrainsAnnotations>
     <UseStandardAnalyzers>false</UseStandardAnalyzers>
     <UsePublicApiAnalyzers>false</UsePublicApiAnalyzers>
     <IsPackable>false</IsPackable>

@@ -13,7 +13,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\src\Cecil.XmlDocNames\Cecil.XmlDocNames.csproj" />
-    <ProjectReference Include="..\ExampleAssembly\ExampleAssembly.csproj" />
+    <ProjectReference Include="..\..\testFixtures\ExampleAssembly\ExampleAssembly.csproj" />
   </ItemGroup>
 
 </Project>
