@@ -1,6 +1,10 @@
 # Build artifacts
 artifacts/
 
+# Folders created by CI
+.config/
+.coverage/
+
 # Visual Studio
 **/bin/
 **/obj/
