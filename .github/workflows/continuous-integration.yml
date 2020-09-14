@@ -11,18 +11,21 @@ env:
 
 jobs:
 
-  build:
-    name: Build
+  test:
+    name: Unit testing and code coverage reporting
     runs-on: ubuntu-latest
     steps:
-
     - name: Checkout
-      uses: actions/checkout@v2
-
+      uses: actions/checkout@v1
     - name: Setup .NET Core
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 3.1.x
-
-    - name: Build
-      run: dotnet build --configuration Release
+    - name: Run unit tests, collect code coverage information
+      run: dotnet test /p:CollectCoverage=true /p:CoverletOutput="${{ github.workspace }}/.coverage/lcov-${{ matrix.os }}.info" /p:CoverletOutputFormat=lcov -c Release
+    - name: Create .NET local tool manifest file
+      run: dotnet new tool-manifest
+    - name: Install Codecov tool
+      run: dotnet tool install Codecov.Tool
+    - name: Upload coverage reports
+      run: dotnet tool run codecov -f .coverage/lcov-${{ matrix.os }}.info --no-color --required
