@@ -51,9 +51,9 @@ dotnet_style_predefined_type_for_member_access = true:suggestion
 
 # Parentheses preferences
 dotnet_style_parentheses_in_arithmetic_binary_operators = never_if_unnecessary:suggestion
-dotnet_style_parentheses_in_other_binary_operators = never_if_unnecessary:suggestion
-dotnet_style_parentheses_in_other_operators = never_if_unnecessary:suggestion
 dotnet_style_parentheses_in_relational_binary_operators = never_if_unnecessary:suggestion
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:suggestion
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:suggestion
 
 # Modifier preferences
 dotnet_style_require_accessibility_modifiers = for_non_interface_members:silent
@@ -218,3 +218,14 @@ dotnet_naming_style.begins_with_i.capitalization = pascal_case
 
 dotnet_code_quality.CA1062.exclude_extension_method_this_parameter = true
 dotnet_code_quality.dispose_ownership_transfer_at_constructor = true
+
+### StyleCop configuration for rules not affected by stylecop.json
+
+# SA1101: Prefix local calls with this
+dotnet_diagnostic.SA1101.severity = none
+# SX1101: Do not prefix local calls with this
+dotnet_diagnostic.SX1101.severity = warning
+# SA1309: Private instance field names must not begin with underscore
+dotnet_diagnostic.SA1309.severity = none
+# SX1309: Private instance field names must begin with underscore
+dotnet_diagnostic.SX1309.severity = warning
