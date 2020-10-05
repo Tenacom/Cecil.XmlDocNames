@@ -8,6 +8,7 @@ on:
 
 env:
   ContinuousIntegrationBuild: "true"
+  DOTNET_NOLOGO: "true"
 
 jobs:
 
