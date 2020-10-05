@@ -1,6 +1,6 @@
 ---
 name: Blank issue
-about: Something that doesn't fit the other categories
+about: Something that doesn't fit any other category
 title: ''
 labels: ''
 assignees: ''
