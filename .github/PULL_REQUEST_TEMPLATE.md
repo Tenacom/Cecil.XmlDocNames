@@ -10,6 +10,7 @@ Please do not remove, reorder, or add items.
 - [ ] Enhancement (new and/or improved behavior)
 - [ ] Refactoring (no functional changes)
 - [ ] Code style update (no functional changes)
+- [ ] Dependencies added, updated, or removed
 - [ ] Build related changes
 - [ ] CI related changes
 - [ ] Documentation update
