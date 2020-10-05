@@ -3,7 +3,7 @@
 <!--
 What types of changes does the PR introduce?
 Put an 'x' in the boxes that apply.
-Please do not remove or reorder items.
+Please do not remove, reorder, or add items.
 -->
 
 - [ ] Bugfix
@@ -18,17 +18,17 @@ Please do not remove or reorder items.
 ## Proposed changes / fixed issues
 
 <!--
-Bugfixes and enhancement PRs MUST refer to existing issues.
+Bugfix and enhancement PRs MUST refer to existing issues.
 Example:
 
-Fixes: #nnnn #nnnn
-Partially fixes: #nnnn (brief explanation, or "see below")
+Closes #nnnn #nnnn
+Partial fix for #nnnn (followed by a brief explanation, or "see below")
 
 For other PR types, delete the two lines below and add a clear and concise description of your changes.
 -->
 
-Fixes:
-Partially fixes:
+Closes #
+Partial fix for #
 
 ## Checklist
 
