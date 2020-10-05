@@ -5,6 +5,12 @@
 
   "settings": {
 
+    "indentation": {
+      "indentationSize": 4,
+      "tabSize": 4,
+      "useTabs": false
+    },
+
     "spacingRules": {
     },
 
