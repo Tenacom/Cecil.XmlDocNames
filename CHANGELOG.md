@@ -7,20 +7,29 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased changes
 
-No unreleased changes so far.
+### New features
+
+### Changes to existing features
+
+### Bugs fixed in this release
+
+### Known problems introduced by this release
 
 ## [1.1.1](https://github.com/tenacom/Cecil.XmlDocNames/releases/tag/1.1.1) (2020-02-27)
 
-### Added
+### New features
+
 - **DOCUMENTATION:** The project now has a changelog.
 - **DOCUMENTATION:** Most badges in [README.md](https://github.com/tenacom/Cecil.XmlDocNames/blob/master/README.md) are now links to relevant URLs.
 
 ## [1.1.0](https://github.com/tenacom/Cecil.XmlDocNames/releases/tag/1.1.0) (2020-02-26)
 
-### Added
+### New features
+
 - **DOCUMENTATION:** New logo, thanks to [IYIKON](https://thenounproject.com/iyikon/) from [the Noun Project](https://thenounproject.com).
 
-### Changed
+### Changes to existing features
+
 - Ownership of the project changed from @rdeago to @Tenacom.
 - **BUILD:** The external annotations file for ReSharper is now automatically generated using [ReSharper.ExportAnnotations](https://github.com/tenacom/ReSharper.ExportAnnotations).
 
