@@ -16,6 +16,8 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+    <CLSCompliant>true</CLSCompliant>
+    <ComVisible>false</ComVisible>
   </PropertyGroup>
 
   <!-- Package Central Version Management -->
