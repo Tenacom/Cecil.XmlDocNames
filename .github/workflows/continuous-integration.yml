@@ -15,6 +15,7 @@ jobs:
   test:
     name: Unit testing and code coverage reporting
     strategy:
+      fail-fast: false
       matrix:
         os: [ ubuntu-latest, windows-latest ]
         net: [ 3.1.x, 5.0.100-rc.1.20452.10 ]
