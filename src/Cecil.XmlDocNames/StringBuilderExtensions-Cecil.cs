@@ -1,5 +1,5 @@
 ﻿// -----------------------------------------------------------------------------------
-// Copyright (C) Tenacom. All rights reserved.
+// Copyright (C) Riccardo De Agostini and Tenacom. All rights reserved.
 // Licensed under the MIT license.
 // See LICENSE file in the project root for full license information.
 //
