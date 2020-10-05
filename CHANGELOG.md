@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changes to existing features
 
+- The `Mono.Cecil` library has been updated to version [0.11.3](https://github.com/jbevain/cecil/releases/tag/0.11.3).
+
 ### Bugs fixed in this release
 
 ### Known problems introduced by this release
