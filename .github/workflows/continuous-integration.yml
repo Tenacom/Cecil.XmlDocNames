@@ -24,6 +24,11 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
+    - name: Setup .NET Core 2.1 SDK (required by ExportAnnotations)
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 2.1.x
+
     - name: Setup .NET ${{ matrix.net }}
       uses: actions/setup-dotnet@v1
       with:
