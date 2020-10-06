@@ -9,6 +9,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### New features
 
+- https://github.com/tenacom/Cecil.XmlDocNames/issues/12 - This library now supports .NET Framework v4.6 and newer.
+
 ### Changes to existing features
 
 - The `Mono.Cecil` library has been updated to version [0.11.3](https://github.com/jbevain/cecil/releases/tag/0.11.3).
