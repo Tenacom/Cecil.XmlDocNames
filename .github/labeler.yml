@@ -2,7 +2,7 @@ area-ci:
   - any: ['.github/workflows/**/*']
 
 area-deps:
-  - "**/PackageVersions.props"
+  - any: ['**/PackageVersions.props', 'Directory.Build.props', 'Directory.Build.targets']
 
 area-docs:
   - any: ['.github/**/*', '**/LICENSE', '**/README.md', '**/THIRD-PARTY-NOTICES']
