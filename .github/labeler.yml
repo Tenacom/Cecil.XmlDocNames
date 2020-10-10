@@ -1,13 +1,21 @@
+area-code:
+  - "**/*.cs"
+
+area-build:
+  - "**/*.csproj"
+  - "**/Common.props"
+  - "**/Common.targets"
+
 area-ci:
   - ".github/workflows/**/*"
 
 area-deps:
-  - "**/PackageVersions.props"
+  - "**/Directory.Packages.props"
   - Directory.Build.props
   - Directory.Build.targets
 
 area-docs:
-  - ".github/**/*"
+  - "docs/**/*"
   - "**/LICENSE"
   - "**/README.md"
   - "**/THIRD-PARTY-NOTICES"
