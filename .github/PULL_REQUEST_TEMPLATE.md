@@ -12,6 +12,7 @@ Please do not remove, reorder, or add items.
 - [ ] Code style update (no functional changes)
 - [ ] Dependencies added, updated, or removed
 - [ ] Build related changes
+- [ ] Repository infrastructure changes (e.g. changes to issue / PR templates)
 - [ ] CI related changes
 - [ ] Documentation update
 - [ ] Other (please describe below)
