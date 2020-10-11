@@ -1,6 +1,6 @@
 extraction:
   csharp:
-    nuget_restore: false
     index:
       dotnet: 3.1.301
+      nuget_restore: false
       arguments: "-c Release /m:1"
