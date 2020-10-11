@@ -1,7 +1,6 @@
 extraction:
   csharp:
+    nuget_restore: false
     index:
-      dotnet: 3.1.402
-      build_command:
-        - dotnet restore
-        - dotnet build -c Release --no-build /m:1
+      dotnet: 3.1.301
+      arguments: "-c Release /m:1"
