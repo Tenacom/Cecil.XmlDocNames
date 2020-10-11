@@ -8,6 +8,7 @@ area-build:
 
 area-ci:
   - ".github/workflows/**/*"
+  - lgtm.yml
 
 area-deps:
   - "**/Directory.Packages.props"
