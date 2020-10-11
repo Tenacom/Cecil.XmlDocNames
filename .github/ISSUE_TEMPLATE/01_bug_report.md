@@ -8,6 +8,8 @@ assignees: ''
 
 <!-- This is just a template - feel free to delete any and all of it and replace as appropriate. -->
 
+## Current version: <!-- The version on which you are experiencing the bug -->
+
 ## Description
 
 <!--

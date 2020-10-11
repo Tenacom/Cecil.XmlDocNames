@@ -6,6 +6,8 @@ labels: 'enhancement'
 assignees: ''
 ---
 
+## Current version: <!-- The version on which you are proposing an improvement -->
+
 ## Background and motivation
 
 <!--
