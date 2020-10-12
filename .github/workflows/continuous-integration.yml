@@ -31,7 +31,7 @@ jobs:
         dotnet-version: ${{ matrix.net }}
 
     - name: Restore dependencies
-      run: dotnet restore /p:Configuration=Release
+      run: dotnet restore
 
     - name: Build solution
       run: dotnet build -c Release --no-restore /maxCpuCount:1
