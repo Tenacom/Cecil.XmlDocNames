@@ -2,6 +2,7 @@ area-code:
   - "**/*.cs"
 
 area-build:
+  - "**/*.sln"
   - "**/*.csproj"
   - "**/Common.props"
   - "**/Common.targets"
