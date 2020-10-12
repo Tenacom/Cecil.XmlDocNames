@@ -39,7 +39,8 @@ Put an `x` in the boxes that apply. You can also fill these out after creating t
 If you're unsure about any of the following items, don't hesitate to ask. We're here to help!
 -->
 
-- [ ] My contribution is either my original work, or comes from projects with an MIT-compatible license, in which case I have updated the THIRD-PARTY-NOTICES file accordingly
+- [ ] My contribution is my original work
+- [ ] My contribution, or part of it, comes from projects with an MIT-compatible license AND I have updated the THIRD-PARTY-NOTICES file accordingly
 - [ ] I have added and/or updated related documentation (if applicable)
 - [ ] I have updated the "Unreleased changes" section in [CHANGELOG.md](https://github.com/Tenacom/Cecil.XmlDocNames/blob/master/CHANGELOG.md) according to the modifications I made
 
