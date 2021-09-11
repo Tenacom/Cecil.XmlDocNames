@@ -114,8 +114,7 @@ namespace Cecil.XmlDocNames
             return sb;
         }
 
-        [NotNull]
-        private static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] TypeReference type)
+        private static StringBuilder AppendDocNameCore(this StringBuilder sb, TypeReference type)
         {
             // Generic parameter (`1 / ``1)
             // Must be handled before nested types, because generic type parameters
@@ -169,8 +168,7 @@ namespace Cecil.XmlDocNames
             // ReSharper restore TailRecursiveCall
         }
 
-        [NotNull]
-        private static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] MethodReference method)
+        private static StringBuilder AppendDocNameCore(this StringBuilder sb, MethodReference method)
         {
             sb = sb.AppendDocNameCore(method.DeclaringType).Append('.').AppendMemberName(method);
 
@@ -191,8 +189,7 @@ namespace Cecil.XmlDocNames
                     : sb;
         }
 
-        [NotNull]
-        private static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] PropertyReference property)
+        private static StringBuilder AppendDocNameCore(this StringBuilder sb, PropertyReference property)
         {
             sb = sb.AppendDocNameCore(property.DeclaringType).Append('.').AppendMemberName(property);
 
@@ -206,8 +203,7 @@ namespace Cecil.XmlDocNames
             return sb;
         }
 
-        [NotNull]
-        private static StringBuilder AppendDocNameCore([NotNull] this StringBuilder sb, [NotNull] MemberReference field)
+        private static StringBuilder AppendDocNameCore(this StringBuilder sb, MemberReference field)
             => sb.AppendDocNameCore(field.DeclaringType).Append('.').AppendMemberName(field);
     }
 }

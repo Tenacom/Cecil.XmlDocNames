@@ -10,7 +10,6 @@
 using System;
 using System.Collections.Generic;
 using System.Text;
-using JetBrains.Annotations;
 
 namespace Cecil.XmlDocNames
 {
@@ -19,8 +18,7 @@ namespace Cecil.XmlDocNames
     /// </content>
     public static partial class StringBuilderExtensions
     {
-        [NotNull]
-        private static StringBuilder InvokeForEach<T>(this StringBuilder sb, IEnumerable<T> items, [NotNull] string separator, [NotNull] Func<StringBuilder, T, StringBuilder> func)
+        private static StringBuilder InvokeForEach<T>(this StringBuilder sb, IEnumerable<T> items, string separator, Func<StringBuilder, T, StringBuilder> func)
         {
             if (sb == null)
             {
