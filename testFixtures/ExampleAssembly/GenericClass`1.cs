@@ -1,6 +1,6 @@
-﻿ using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
- namespace ExampleAssembly
+namespace ExampleAssembly
 {
     public sealed class GenericClass<T>
     {
