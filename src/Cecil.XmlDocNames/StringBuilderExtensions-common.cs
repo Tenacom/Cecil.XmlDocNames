@@ -20,14 +20,19 @@ namespace Cecil.XmlDocNames
     {
         private static StringBuilder InvokeForEach<T>(this StringBuilder sb, IEnumerable<T> items, string separator, Func<StringBuilder, T, StringBuilder> func)
         {
-            if (sb == null)
+            if (sb is null)
             {
                 throw new ArgumentNullException(nameof(sb));
             }
 
-            if (items == null)
+            if (items is null)
             {
                 throw new ArgumentNullException(nameof(items));
+            }
+
+            if (func is null)
+            {
+                throw new ArgumentNullException(nameof(func));
             }
 
             var first = true;
