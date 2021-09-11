@@ -4,4 +4,4 @@ extraction:
       nuget_restore: false
       dotnet:
         version: 3.1.402
-        arguments: "-c Release /m:1"
+        arguments: ["-c", "Release", "-maxCpuCount:1"]
