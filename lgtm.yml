@@ -4,4 +4,5 @@ extraction:
       nuget_restore: false
       dotnet:
         version: 5.0.9
+      msbuild:
         arguments: ["-c", "Release", "-maxCpuCount:1"]
