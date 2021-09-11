@@ -15,6 +15,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Known problems introduced by this release
 
+## [1.2.1](https://github.com/tenacom/Cecil.XmlDocNames/releases/tag/1.2.1) (2021-09-11)
+
+### Changes to existing features
+
+- The `Mono.Cecil` library has been updated to version [0.11.4](https://github.com/jbevain/cecil/releases/tag/0.11.4).
+
 ## [1.2.0](https://github.com/tenacom/Cecil.XmlDocNames/releases/tag/1.2.0) (2020-10-06)
 
 ### New features
