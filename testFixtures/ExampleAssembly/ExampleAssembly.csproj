@@ -4,7 +4,7 @@
     <TargetFramework>net5.0</TargetFramework>
     <XmlDocs>false</XmlDocs>
     <UseJetBrainsAnnotations>false</UseJetBrainsAnnotations>
-    <UseStandardAnalyzers>false</UseStandardAnalyzers>
+    <UseStyleCopAnalyzers>false</UseStyleCopAnalyzers>
     <UsePublicApiAnalyzers>false</UsePublicApiAnalyzers>
     <IsPackable>false</IsPackable>
   </PropertyGroup>

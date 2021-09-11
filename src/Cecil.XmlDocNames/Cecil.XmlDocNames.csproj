@@ -9,6 +9,9 @@
   <!-- Build options -->
   <PropertyGroup>
     <TargetFrameworks>net46;netstandard2.0</TargetFrameworks>
+    <UseStyleCopAnalyzers>true</UseStyleCopAnalyzers>
+    <UseJetBrainsAnnotations>true</UseJetBrainsAnnotations>
+    <XmlDocs>false</XmlDocs>
   </PropertyGroup>
 
   <!-- Dependencies -->
