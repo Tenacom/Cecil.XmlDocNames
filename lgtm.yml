@@ -3,5 +3,5 @@ extraction:
     index:
       nuget_restore: false
       dotnet:
-        version: 3.1.402
+        version: 5.0.9
         arguments: ["-c", "Release", "-maxCpuCount:1"]
