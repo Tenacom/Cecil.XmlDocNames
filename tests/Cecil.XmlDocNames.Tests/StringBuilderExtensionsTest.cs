@@ -62,9 +62,9 @@ namespace Cecil.XmlDocNames.Tests
             var sb = new StringBuilder();
             using var assembly = TestUtility.ReadExampleAssembly();
             var type = assembly.GetTypeThatStartsWith("Example");
-            var evnt = type.GetEventThatStartsWith("E");
+            var @event = type.GetEventThatStartsWith("E");
 
-            var result = sb.AppendXmlDocName(evnt).ToString();
+            var result = sb.AppendXmlDocName(@event).ToString();
             Assert.AreEqual("E:ExampleAssembly.ExampleClass.Event", result);
         }
 
