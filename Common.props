@@ -7,7 +7,7 @@
     <Owners>tenacom</Owners>
     <Company>Tenacom</Company>
     <Copyright>Copyright (c) 2018-2021 Riccardo De Agostini and Tenacom</Copyright>
-    <PackageReleaseNotes>A changelog is available at $(PackageProjectUrl)/blob/master/CHANGELOG.md</PackageReleaseNotes>
+    <PackageReleaseNotes>A changelog is available at $(PackageProjectUrl)/blob/main/CHANGELOG.md</PackageReleaseNotes>
   </PropertyGroup>
 
   <!-- Common build options -->
