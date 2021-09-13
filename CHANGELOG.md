@@ -13,6 +13,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Bugs fixed in this release
 
+- The XML documentation file was not present in the NuGet package for v1.2.1.
+
 ### Known problems introduced by this release
 
 ## [1.2.1](https://github.com/tenacom/Cecil.XmlDocNames/releases/tag/1.2.1) (2021-09-11)
