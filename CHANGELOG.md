@@ -11,6 +11,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changes to existing features
 
+- **POTENTIALLY BREAKING CHANGE:** Support for .NET 4.6 has been dropped. This is now a .NET Standard 2.0 library only.
+
 ### Bugs fixed in this release
 
 ### Known problems introduced by this release
