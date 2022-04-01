@@ -8,7 +8,7 @@
 
   <!-- Build options -->
   <PropertyGroup>
-    <TargetFrameworks>net46;netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.0</TargetFrameworks>
     <UseStyleCopAnalyzers>true</UseStyleCopAnalyzers>
     <UseJetBrainsAnnotations>true</UseJetBrainsAnnotations>
   </PropertyGroup>
