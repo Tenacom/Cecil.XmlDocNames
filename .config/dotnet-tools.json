@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "isRoot": true,
+  "tools": {
+    "codecov.tool": {
+      "version": "1.13.0",
+      "commands": [
+        "codecov"
+      ]
+    },
+    "jetbrains.resharper.globaltools": {
+      "version": "2021.3.4",
+      "commands": [
+        "jb"
+      ]
+    },
+    "nukeeper": {
+      "version": "0.35.0",
+      "commands": [
+        "nukeeper"
+      ]
+    }
+  }
+}

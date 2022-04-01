@@ -5,7 +5,6 @@ artifacts/
 logs/
 
 # Folders created by CI
-.config/
 .coverage/
 
 # Visual Studio

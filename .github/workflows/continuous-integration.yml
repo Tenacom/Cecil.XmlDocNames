@@ -43,9 +43,6 @@ jobs:
     - name: Run unit tests, collect code coverage information
       run: dotnet test -c Release --no-build -p:CollectCoverage=true -p:CoverletOutput="${{ github.workspace }}/.coverage/lcov_${{ matrix.os }}_${{ matrix.net }}.info" -p:CoverletOutputFormat=lcov
 
-    - name: Create .NET local tool manifest file
-      run: dotnet new tool-manifest
-
     - name: Install Codecov tool
       run: dotnet tool install Codecov.Tool
 
