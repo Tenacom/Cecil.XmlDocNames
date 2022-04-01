@@ -1,10 +1,8 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <XmlDocs>false</XmlDocs>
-    <UseJetBrainsAnnotations>false</UseJetBrainsAnnotations>
-    <UseStyleCopAnalyzers>false</UseStyleCopAnalyzers>
     <UsePublicApiAnalyzers>false</UsePublicApiAnalyzers>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
@@ -13,4 +11,12 @@
     <LiteralAssemblyAttribute Include="System.Diagnostics.CodeAnalysis.ExcludeFromCodeCoverage" />
   </ItemGroup>
 
+  <!-- Suppress warnings triggered by intentionally unclean code -->
+  <PropertyGroup>
+    <NoWarn>CA1051;$(NoWarn)</NoWarn> <!-- Do not declare visible instance fields -->
+    <NoWarn>CA1062;$(NoWarn)</NoWarn> <!-- Validate arguments of public methods -->
+    <NoWarn>CA1822;$(NoWarn)</NoWarn> <!-- Mark members as static -->
+    <NoWarn>SA1201;$(NoWarn)</NoWarn> <!-- Elements should appear in the correct order -->
+    <NoWarn>SA1401;$(NoWarn)</NoWarn> <!-- Fields should be private -->
+  </PropertyGroup>
 </Project>

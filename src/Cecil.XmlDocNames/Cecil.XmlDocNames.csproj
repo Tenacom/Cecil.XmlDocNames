@@ -9,7 +9,6 @@
   <!-- Build options -->
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0</TargetFrameworks>
-    <UseStyleCopAnalyzers>true</UseStyleCopAnalyzers>
     <UseJetBrainsAnnotations>true</UseJetBrainsAnnotations>
   </PropertyGroup>
 

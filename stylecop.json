@@ -5,12 +5,6 @@
 
   "settings": {
 
-    "indentation": {
-      "indentationSize": 4,
-      "tabSize": 4,
-      "useTabs": false
-    },
-
     "spacingRules": {
     },
 
@@ -22,7 +16,7 @@
       "elementOrder": [ "kind", "accessibility", "constant", "static", "readonly" ],
       "systemUsingDirectivesFirst": true,
       "usingDirectivesPlacement": "outsideNamespace",
-      "blankLinesBetweenUsingGroups": "allow"
+      "blankLinesBetweenUsingGroups": "omit"
     },
 
     "namingRules": {
@@ -39,18 +33,19 @@
 
     "layoutRules": {
       "newlineAtEndOfFile": "require",
-      "allowConsecutiveUsings": true
+      "allowConsecutiveUsings": true,
+      "allowDoWhileOnClosingBrace":  true 
     },
 
     "documentationRules": {
       "companyName": "Tenacom",
-      "copyrightText": "{decoration}\nCopyright (C) {copyrightHolders}. All rights reserved.\nLicensed under the {licenseName} license.\nSee {licenseFile} file in the project root for full license information.\n\nPart of this file may be third-party code, distributed under a compatible license.\nSee {thirdPartyNoticeFile} file in the project root for third-party copyright notices.\n{decoration}",
+      "copyrightText": "{decoration}\nCopyright (C) {copyrightHolders}. All rights reserved.\nLicensed under the {licenseName} license.\nSee the {licenseFile} file in the project root for full license information.\n\nPart of this file may be third-party code, distributed under a compatible license.\nSee the {thirdPartyNoticeFile} file in the project root for third-party copyright notices.\n{decoration}",
       "variables": {
         "copyrightHolders": "Riccardo De Agostini and Tenacom",
         "licenseName": "MIT",
         "licenseFile": "LICENSE",
         "thirdPartyNoticeFile": "THIRD-PARTY-NOTICES",
-        "decoration": "-----------------------------------------------------------------------------------"
+        "decoration": "---------------------------------------------------------------------------------------"
       },
       "xmlHeader": false,
       "documentInterfaces": true,

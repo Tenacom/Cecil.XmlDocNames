@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.29613.14
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cecil.XmlDocNames", "src\Cecil.XmlDocNames\Cecil.XmlDocNames.csproj", "{62CB2CBD-955F-4020-8CCE-4804D8BCBE30}"
 EndProject
@@ -16,6 +16,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "- Configuration", "- Configuration", "{46B5153B-C518-4A48-BF6B-39989F54BB59}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
+		.globalconfig = .globalconfig
 		Common.props = Common.props
 		Directory.Build.props = Directory.Build.props
 		Directory.Build.targets = Directory.Build.targets
@@ -25,11 +26,23 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "- Configuration", "- Config
 		VERSION = VERSION
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{666B431F-DEA5-45E1-A271-84060570A7E8}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{666B431F-DEA5-45E1-A271-84060570A7E8}"
+	ProjectSection(SolutionItems) = preProject
+		tests\Common.targets = tests\Common.targets
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Cecil.XmlDocNames.Tests", "tests\Cecil.XmlDocNames.Tests\Cecil.XmlDocNames.Tests.csproj", "{C772984C-CAF9-47FD-A478-08D0EA798C32}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExampleAssembly", "testFixtures\ExampleAssembly\ExampleAssembly.csproj", "{EFA5A940-A95E-4BA9-B4B5-EA8E265CBF86}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0C568C24-8153-453E-B697-050A899D4BE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "testFixtures", "testFixtures", "{0C479E0D-8D11-4F4A-8195-969BA1821944}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "- Configuration", "- Configuration", "{9CD028C0-4CEC-4CA1-BC92-366E3E397BD3}"
+	ProjectSection(SolutionItems) = preProject
+		tests\Common.targets = tests\Common.targets
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,8 +67,10 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{62CB2CBD-955F-4020-8CCE-4804D8BCBE30} = {0C568C24-8153-453E-B697-050A899D4BE3}
 		{C772984C-CAF9-47FD-A478-08D0EA798C32} = {666B431F-DEA5-45E1-A271-84060570A7E8}
-		{EFA5A940-A95E-4BA9-B4B5-EA8E265CBF86} = {666B431F-DEA5-45E1-A271-84060570A7E8}
+		{EFA5A940-A95E-4BA9-B4B5-EA8E265CBF86} = {0C479E0D-8D11-4F4A-8195-969BA1821944}
+		{9CD028C0-4CEC-4CA1-BC92-366E3E397BD3} = {666B431F-DEA5-45E1-A271-84060570A7E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {79026CCC-2B02-4EDF-90C7-E25646EF436E}
