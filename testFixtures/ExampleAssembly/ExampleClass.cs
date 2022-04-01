@@ -1,29 +1,35 @@
-﻿using System;
+﻿// ---------------------------------------------------------------------------------------
+// Copyright (C) Riccardo De Agostini and Tenacom. All rights reserved.
+// Licensed under the MIT license.
+// See the LICENSE file in the project root for full license information.
+//
+// Part of this file may be third-party code, distributed under a compatible license.
+// See the THIRD-PARTY-NOTICES file in the project root for third-party copyright notices.
+// ---------------------------------------------------------------------------------------
+
+using System;
 using System.Collections.Generic;
 
-namespace ExampleAssembly
+namespace ExampleAssembly;
+
+public sealed class ExampleClass
 {
-    public sealed class ExampleClass
+    public int Field;
+
+    public ExampleClass()
     {
-        public int Field;
+        Field = default;
+    }
 
-        public ExampleClass()
-        {
-            Field = default;
-        }
+    public int Property { get; set; }
 
-        public int Property { get; set; }
+    public event EventHandler? Event;
 
-#pragma warning disable CS0067 // Event is never used - accessed only via reflection
-        public event EventHandler? Event;
-#pragma warning restore CS0067
+    public void Method(int a, ref string b, byte[] c) => b = a + c.ToString();
 
-        public void Method(int a, ref string b, byte[] c) => b = a + c.ToString();
-
-        public void GenericMethod<T>(T a, ref T b, T[] c, out IEnumerable<T> d)
-        {
-            b = a;
-            d = c;
-        }
+    public void GenericMethod<T>(T a, ref T b, T[] c, out IEnumerable<T> d)
+    {
+        b = a;
+        d = c;
     }
 }
