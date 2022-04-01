@@ -11,11 +11,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changes to existing features
 
-- **POTENTIALLY BREAKING CHANGE:** Support for .NET 4.6 has been dropped. This is now a .NET Standard 2.0 library only.
-
 ### Bugs fixed in this release
 
 ### Known problems introduced by this release
+
+## [1.3.0](https://github.com/tenacom/Cecil.XmlDocNames/releases/tag/1.3.0) (2022-04-01)
+
+### Changes to existing features
+
+- **POTENTIALLY BREAKING CHANGE:** Support for .NET 4.6 has been dropped. This is now a .NET Standard 2.0 library only.
 
 ## [1.2.2](https://github.com/tenacom/Cecil.XmlDocNames/releases/tag/1.2.2) (2021-09-13)
 
