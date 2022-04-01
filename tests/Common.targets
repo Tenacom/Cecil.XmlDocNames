@@ -1,5 +1,9 @@
 <Project>
 
+  <PropertyGroup>
+    <NoWarn>CA1707;$(NoWarn)</NoWarn>
+  </PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="coverlet.msbuild">
       <PrivateAssets>all</PrivateAssets>
