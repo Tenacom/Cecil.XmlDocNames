@@ -1,3 +1,11 @@
+## This project has been retired
+
+Following two years of inactivity, the final nail in the coffin came with PR Tenacom/Buildvana#276, that made this project redundant and basically useless.
+
+Anyone interested in taking it up may contact me (ideally by [opening a discussion on the Buildvana repo](https://github.com/Tenacom/Buildvana/discussions/new?category=general) about the ownership of NuGet packages.
+
+---
+
 # ![](https://raw.githubusercontent.com/tenacom/Cecil.XmlDocNames/master/graphics/Cecil.XmlDocNames-128.png) Cecil.XmlDocNames
 
 [![License](https://img.shields.io/github/license/tenacom/Cecil.XmlDocNames.svg)](https://github.com/tenacom/Cecil.XmlDocNames/blob/master/LICENSE)
