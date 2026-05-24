@@ -2,7 +2,7 @@
 
 Following two years of inactivity, the final nail in the coffin came with [PR Tenacom/Buildvana#276](https://github.com/Tenacom/Buildvana/pull/276), which made this project redundant and basically useless.
 
-Anyone interested in taking it up may contact me (ideally by [opening a discussion on the Buildvana repo](https://github.com/Tenacom/Buildvana/discussions/new?category=general) about the ownership of NuGet packages).
+Anyone interested in taking it up may contact me (ideally by [opening a discussion on the Buildvana repo](https://github.com/Tenacom/Buildvana/discussions/new?category=general)) about the ownership of NuGet packages.
 
 ---
 
